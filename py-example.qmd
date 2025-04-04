@@ -1,6 +1,10 @@
 ---
 title: "Python Example"
 subtitle: "DataFest! {{< var datafest.term >}}"
+author: Pete Benbow
+date: Apr 5, 2025
+description: |
+    Learn how to create data science reports using **Python** with Quarto!
 format:
   html:
     code-link: true
@@ -9,10 +13,6 @@ format:
     code-block-border-left: "#d42121"
 bibliography: citations.bib
 ---
-
-# Intro
-
-Learn how to create data science reports using **Python** with Quarto!
 
 # Code cells
 

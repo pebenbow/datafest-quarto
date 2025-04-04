@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "DataFest!",
     "section": "",
-    "text": "Python Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR Example\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Python Example\n\n\nLearn how to create data science reports using Python with Quarto!\n\n\n\nPete Benbow\n\n\nApr 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nR Example\n\n\nLearn how to create data science reports using R with Quarto!\n\n\n\nPete Benbow\n\n\nApr 5, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "py-example.html",
     "href": "py-example.html",
     "title": "Python Example",
     "section": "",
-    "text": "Intro\nLearn how to create data science reports using Python with Quarto!\n\n\nCode cells\nFor this, we will use numpy (Harris et al. 2020) and matplotlib (Hunter 2007).\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences\n\nHarris, Charles R., K. Jarrod Millman, Stéfan J. van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, et al. 2020. “Array Programming with NumPy.” Nature 585 (7825): 357–62. https://doi.org/10.1038/s41586-020-2649-2.\n\n\nHunter, J. D. 2007. “Matplotlib: A 2D Graphics Environment.” Computing in Science & Engineering 9 (3): 90–95. https://doi.org/10.1109/MCSE.2007.55."
+    "text": "Code cells\nFor this, we will use numpy (Harris et al. 2020) and matplotlib (Hunter 2007).\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences\n\nHarris, Charles R., K. Jarrod Millman, Stéfan J. van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, et al. 2020. “Array Programming with NumPy.” Nature 585 (7825): 357–62. https://doi.org/10.1038/s41586-020-2649-2.\n\n\nHunter, J. D. 2007. “Matplotlib: A 2D Graphics Environment.” Computing in Science & Engineering 9 (3): 90–95. https://doi.org/10.1109/MCSE.2007.55."
   },
   {
     "objectID": "py-example.html#code-cells",
@@ -25,7 +25,7 @@
     "href": "r-example.html",
     "title": "R Example",
     "section": "",
-    "text": "Learn how to create data science reports using R with Quarto!"
+    "text": "You know the drill! When working with R, we need to start by loading in whatever packages are required for the work we’re doing.\nIn this case, we need ggplot2 for data visualization (Wickham 2016), dplyr for data transformation (Wickham et al. 2023), and WDI will be our data source (Arel-Bundock 2022).\n\n# Load the required packages\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(WDI)"
   },
   {
     "objectID": "r-example.html#code-cells",
