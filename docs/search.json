@@ -159,5 +159,12 @@
     "title": "Quarto Workshop",
     "section": "Setting up GitHub Pages",
     "text": "Setting up GitHub Pages\n\nOnce your site is live, you’ll see a link!"
+  },
+  {
+    "objectID": "presentation.html#accessing-these-slides",
+    "href": "presentation.html#accessing-these-slides",
+    "title": "Quarto Workshop",
+    "section": "Accessing these slides",
+    "text": "Accessing these slides\nGo to:\nhttps://pebenbow.github.io/datafest-quarto/"
   }
 ]
