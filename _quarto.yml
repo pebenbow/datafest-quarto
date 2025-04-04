@@ -8,6 +8,10 @@ website:
   page-navigation: true
   title: "DataFest!"
   description: "Homepage for DataFest! - {{< var datafest.term >}} at Davidson College"
+  site-url: https://pebenbow.github.io/datafest-quarto/
+  repo-url: https://github.com/pebenbow/datafest-quarto
+  issue-url: https://github.com/pebenbow/datafest-quarto/issues/new/choose
+  repo-actions: [issue]
 
   navbar:
     background: "#d42121"
@@ -22,16 +26,21 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: presentation.qmd
+        text: Slide Deck
       - href: r-example.qmd
         text: R Example
       - href: py-example.qmd
         text: Python Example
-      - href: presentation.qmd
-        text: Slide Deck
+
+    tools:
+      - icon: github
+        href: https://github.com/pebenbow/datafest-quarto
+        text: GitHub
 
   page-footer:
     left: "This page is built with [Quarto](https://quarto.org/)"
-    background: "#0F1012"
+    background: "#d42121"
     foreground: "#FFFFFF"
 
 format:
