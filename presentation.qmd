@@ -6,7 +6,7 @@ description: |
 institute: "Davidson College <br> Department of Data Science"
 author: "Pete Benbow"
 date: Apr 4, 2025
-footer: "[🔗 Back to Home](index.qmd)"
+footer: "[🔗 Back to Home](index.html)"
 logo: "images/davidson-wordmark-horizontal-lockup-black.png"
 image: "images/slides.png"
 lightbox: true
@@ -52,28 +52,47 @@ It supports coding in R, Python, SQL, Julia, ObservableJS, and more!
 ## Why use Quarto?
 
 - Can be used to write books, blogs, reports, etc.
+- **Can be used to present your DataFest project!**
 - **Can be used to build websites that showcase your data science projects to employers!**
 - Can be used to produce academic papers via LaTeX (including templates for specific journals like JASA!)
 
 ## Goals of this workshop
 
 - Learn how to use Quarto with Python and R to create websites
-- Recreate this website: <https://pebenbow.github.io/datafest-quarto/>{target="_blank"}
 - Learn how to deploy a Quarto website using GitHub Pages
 
-## Prerequisites
+## Workshop time!
 
-::: {.callout-important appearance="simple"}
-I assume you already have installed R and Python on your machine
-:::
+Go to <https://go.davidson.edu/datafest-quarto>
 
-1. [Install Quarto on your machine](https://quarto.org/docs/get-started/){target="_blank"}
-2. [Install VS Code on your machine](https://code.visualstudio.com/download){target="_blank"}
-3. [Install the Quarto extension for VS Code](https://marketplace.visualstudio.com/items?itemName=quarto.quarto){target="_blank"}
+## Forking this repo
 
-## Verifying Quarto
+1. Go to <https://github.com/pebenbow/datafest-quarto>
 
-From the terminal in VS Code, run `quarto check` to run diagnostics and verify Quarto is fully installed and supports R and Python.
+## Forking this repo
 
-## VS Code setup
+2. Open the "Fork" menu in the upper-right corner and create new fork
 
+![](images/repo-fork.png)
+
+## Forking this repo
+
+![](images/repo-fork2.png)
+
+## Setting up GitHub Pages
+
+1. Go to Settings >> Pages
+
+![](images/github-pages01.png)
+
+## Setting up GitHub Pages
+
+2. Pick your branch and "docs" subfolder, then Save!
+
+![](images/github-pages02.png)
+
+## Setting up GitHub Pages
+
+3. Once your site is live, you'll see a link!
+
+![](images/github-pages03.png)
