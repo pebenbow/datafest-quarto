@@ -1,10 +1,14 @@
 ---
 title: "Quarto Workshop"
 subtitle: "DataFest! {{< var datafest.term >}}"
+description: | 
+    Access the slides for this workshop on how to build websites with Quarto!
 institute: "Davidson College <br> Department of Data Science"
 author: "Pete Benbow"
-footer: "[🔗 Back to Home](https://pebenbow.github.io/datafest-quarto/)"
+date: Apr 4, 2025
+footer: "[🔗 Back to Home](index.qmd)"
 logo: "images/davidson-wordmark-horizontal-lockup-black.png"
+image: "images/slides.png"
 lightbox: true
 format:
   revealjs:

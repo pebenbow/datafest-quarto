@@ -2,7 +2,7 @@
 title: "Python Example"
 subtitle: "DataFest! {{< var datafest.term >}}"
 author: Pete Benbow
-date: Apr 5, 2025
+date: Apr 4, 2025
 description: |
     Learn how to create data science reports using **Python** with Quarto!
 format:

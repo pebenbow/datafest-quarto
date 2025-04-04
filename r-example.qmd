@@ -4,7 +4,7 @@ subtitle: "DataFest! {{< var datafest.term >}}"
 author: Pete Benbow
 description: |
     Learn how to create data science reports using **R** with Quarto!
-date: Apr 5, 2025
+date: Apr 4, 2025
 format:
   html:
     code-link: true

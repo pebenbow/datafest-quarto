@@ -26,6 +26,8 @@ website:
         text: R Example
       - href: py-example.qmd
         text: Python Example
+      - href: presentation.qmd
+        text: Slide Deck
 
   page-footer:
     left: "This page is built with [Quarto](https://quarto.org/)"

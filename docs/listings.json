@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/py-example.html",
-      "/r-example.html"
+      "/presentation.html",
+      "/r-example.html",
+      "/py-example.html"
     ]
   }
 ]

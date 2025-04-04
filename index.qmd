@@ -8,4 +8,9 @@ format:
     toc: false
 listing: 
   type: grid
+  sort: false
+  contents:
+    - "presentation.qmd"
+    - "r-example.qmd"
+    - "py-example.qmd"
 ---
