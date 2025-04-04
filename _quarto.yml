@@ -1,0 +1,57 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "DataFest!"
+  description: "Homepage for DataFest! - {{< var datafest.term >}} at Davidson College"
+
+  navbar:
+    background: "#d42121"
+    logo: "images/davidson-wordmark-lockup-on red.png"
+    logo-alt: "Davidson College wordmark"
+    pinned: true
+    align: center
+
+    # style: docked
+    search: true
+    collapse-level: 2
+    left:
+      - href: index.qmd
+        text: Home
+      - href: r-example.qmd
+        text: R Example
+      - href: py-example.qmd
+        text: Python Example
+
+  page-footer:
+    left: "This page is built with [Quarto](https://quarto.org/)"
+    background: "#0F1012"
+    foreground: "#FFFFFF"
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/light.scss]
+      dark: [cosmo, style/light.scss, style/dark.scss]
+    linkcolor: "#d42121"
+    lightbox: true
+    fig-width: 10
+    fig-height: 6
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    code-block-bg: true
+    code-block-border-left: "#d42121"
+    mainfont: "Atkinson Hyperlegible"
+
+execute:
+  freeze: auto
+  cache: true
+
+editor: source
+
+jupyter: python3

@@ -1,0 +1,35 @@
+---
+title: "Python Example"
+subtitle: "DataFest! {{< var datafest.term >}}"
+format:
+  html:
+    code-link: true
+    html-table-processing: none
+    code-block-bg: true
+    code-block-border-left: "#d42121"
+bibliography: citations.bib
+---
+
+# Intro
+
+Learn how to create data science reports using **Python** with Quarto!
+
+# Code cells
+
+For this, we will use `numpy` [@numpy] and `matplotlib` [@matplotlib].
+
+``` {python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+

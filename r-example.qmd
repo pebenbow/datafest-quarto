@@ -1,0 +1,125 @@
+---
+title: "R Example"
+subtitle: "DataFest! {{< var datafest.term >}}"
+format:
+  html:
+    code-link: true
+    html-table-processing: none
+    code-block-bg: true
+    code-block-border-left: "#d42121"
+bibliography: citations.bib
+---
+
+# Intro
+
+Learn how to create data science reports using **R** with Quarto!
+
+# Setup
+
+You know the drill! When working with R, we need to start by loading in whatever packages are required for the work we're doing.
+
+In this case, we need `ggplot2` for data visualization [@ggplot2], `dplyr` for data transformation [@dplyr], and `WDI` will be our data source [@WDI].
+
+``` {r setup}
+#| output: false
+
+# Load the required packages
+library(ggplot2)
+library(dplyr)
+library(WDI)
+```
+
+# Exercises
+
+Now that we've loaded our packages, let's run through a few progressive exercises:
+
+1. Load the data
+2. Transform
+3. Visualize as chart
+4. Visualize as table
+
+## Ex 1: Get data
+
+Let's start by using the `WDI` package to call the World Bank's public World Development Indicators API. We'll load in data for all countries for the year 2023, and we'll use the indicator `NY.GDP.PCAP.KD`, which represents GDP per capita in current US dollars.
+
+::: {.callout-tip collapse="true"}
+Store the output as a new data frame named `wb`.
+:::
+
+``` {r}
+
+wb <- WDI(
+    country   = "all",
+    indicator = "NY.GDP.PCAP.KD",
+    start     = 2023,
+    end       = 2023,
+    extra     = TRUE
+) 
+```
+
+## Ex 2: Transform
+
+In this step, we will:
+
+1. Rename our GDP per capita measure to a more friendly name.
+2. Rank our countries by GDP per capita in descending order.
+3. Filter out any aggregate records.
+4. Filter to only the top 10 countries by their rank.
+
+::: {.callout-tip collapse="true"}
+Store the output as a new data frame named `wb_top10`.
+:::
+
+```{r}
+wb_top10 <- wb |>
+    rename(gdp_percap = NY.GDP.PCAP.KD) |> 
+    mutate(rank = rank(desc(gdp_percap))) |>
+    filter(
+        region != "Aggregates",
+        rank <= 10
+    )
+```
+
+## Ex 3: Visualize as chart
+
+Now let's plot the data with `ggplot2`! Don't forget to add descriptive labels, and reorder your X axis so the countries are presented in descending order by their GDP per capita.
+
+``` {r}
+#| code-fold: true
+
+wb_top10 |>
+    ggplot() + 
+    geom_col(
+        aes(
+            x = reorder(country,gdp_percap),
+            y = gdp_percap,
+        ),
+        fill = "#d42121"
+    ) + 
+    labs(
+        title = "Top 10 countries by GDP per capita",
+        x     = "Country",
+        y     = "GDP per capita (current US dollars)"
+    ) + 
+    coord_flip() + 
+    theme_minimal()
+```
+
+## Ex 4: Visualize as table
+
+```{r}
+#| code-fold: true
+
+wb_top10 |>
+    select(
+        rank,
+        country,
+        gdp_percap,
+        region,
+        income,
+        lending
+    ) |> 
+    arrange(rank) |> 
+    knitr::kable()
+```
+

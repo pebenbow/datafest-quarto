@@ -1,0 +1,11 @@
+---
+title: "DataFest!"
+subtitle: "{{< var datafest.term >}}"
+format:
+  html:
+    html-table-processing: none
+    page-layout: full
+    toc: false
+listing: 
+  type: grid
+---
