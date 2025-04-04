@@ -26,6 +26,12 @@ execute:
   freeze: false
 ---
 
+## Accessing these slides
+
+Go to:
+
+<https://pebenbow.github.io/datafest-quarto/>{target="_blank"}
+
 ## About Me
 
 - Pete Benbow ("BEN-bo"; he/him)
@@ -63,11 +69,11 @@ It supports coding in R, Python, SQL, Julia, ObservableJS, and more!
 
 ## Workshop time!
 
-Go to <https://go.davidson.edu/datafest-quarto>
+Go to <https://go.davidson.edu/datafest-quarto>{target="_blank"}
 
 ## Forking this repo
 
-1. Go to <https://github.com/pebenbow/datafest-quarto>
+1. Go to <https://github.com/pebenbow/datafest-quarto>{target="_blank"}
 
 ## Forking this repo
 
