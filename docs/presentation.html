@@ -6,7 +6,10 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Pete Benbow">
@@ -178,6 +181,7 @@ Pete Benbow
 <h2>Why use Quarto?</h2>
 <ul>
 <li>Can be used to write books, blogs, reports, etc.</li>
+<li><strong>Can be used to present your DataFest project!</strong></li>
 <li><strong>Can be used to build websites that showcase your data science projects to employers!</strong></li>
 <li>Can be used to produce academic papers via LaTeX (including templates for specific journals like JASA!)</li>
 </ul>
@@ -186,34 +190,50 @@ Pete Benbow
 <h2>Goals of this workshop</h2>
 <ul>
 <li>Learn how to use Quarto with Python and R to create websites</li>
-<li>Recreate this website: <a href="https://pebenbow.github.io/datafest-quarto/" target="_blank">https://pebenbow.github.io/datafest-quarto/</a></li>
 <li>Learn how to deploy a Quarto website using GitHub Pages</li>
 </ul>
 </section>
-<section id="prerequisites" class="slide level2">
-<h2>Prerequisites</h2>
-<div class="callout callout-important callout-style-simple">
-<div class="callout-body">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-content">
-<p>I assume you already have installed R and Python on your machine</p>
-</div>
-</div>
-</div>
+<section id="workshop-time" class="slide level2">
+<h2>Workshop time!</h2>
+<p>Go to <a href="https://go.davidson.edu/datafest-quarto" class="uri">https://go.davidson.edu/datafest-quarto</a></p>
+</section>
+<section id="forking-this-repo" class="slide level2">
+<h2>Forking this repo</h2>
 <ol type="1">
-<li><a href="https://quarto.org/docs/get-started/" target="_blank">Install Quarto on your machine</a></li>
-<li><a href="https://code.visualstudio.com/download" target="_blank">Install VS Code on your machine</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto" target="_blank">Install the Quarto extension for VS Code</a></li>
+<li>Go to <a href="https://github.com/pebenbow/datafest-quarto" class="uri">https://github.com/pebenbow/datafest-quarto</a></li>
 </ol>
 </section>
-<section id="verifying-quarto" class="slide level2">
-<h2>Verifying Quarto</h2>
-<p>From the terminal in VS Code, run <code>quarto check</code> to run diagnostics and verify Quarto is fully installed and supports R and Python.</p>
+<section id="forking-this-repo-1" class="slide level2">
+<h2>Forking this repo</h2>
+<ol start="2" type="1">
+<li>Open the “Fork” menu in the upper-right corner and create new fork</li>
+</ol>
+<p><a href="images/repo-fork.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/repo-fork.png"></a></p>
 </section>
-<section id="vs-code-setup" class="slide level2">
-<h2>VS Code setup</h2>
+<section id="forking-this-repo-2" class="slide level2">
+<h2>Forking this repo</h2>
+<p><a href="images/repo-fork2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/repo-fork2.png"></a></p>
+</section>
+<section id="setting-up-github-pages" class="slide level2">
+<h2>Setting up GitHub Pages</h2>
+<ol type="1">
+<li>Go to Settings &gt;&gt; Pages</li>
+</ol>
+<p><a href="images/github-pages01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/github-pages01.png"></a></p>
+</section>
+<section id="setting-up-github-pages-1" class="slide level2">
+<h2>Setting up GitHub Pages</h2>
+<ol start="2" type="1">
+<li>Pick your branch and “docs” subfolder, then Save!</li>
+</ol>
+<p><a href="images/github-pages02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/github-pages02.png"></a></p>
+</section>
+<section id="setting-up-github-pages-2" class="slide level2">
+<h2>Setting up GitHub Pages</h2>
+<ol start="3" type="1">
+<li>Once your site is live, you’ll see a link!</li>
+</ol>
+<p><a href="images/github-pages03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/github-pages03.png"></a></p>
 
 
 </section>
@@ -221,7 +241,7 @@ Pete Benbow
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/davidson-wordmark-horizontal-lockup-black.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="./index.html">🔗 Back to Home</a></p>
+<p><a href="index.html">🔗 Back to Home</a></p>
 </div>
 </div></div>
 
@@ -620,6 +640,38 @@ Pete Benbow
       }
     });
     </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>

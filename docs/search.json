@@ -60,14 +60,14 @@
     "href": "presentation.html#why-use-quarto",
     "title": "Quarto Workshop",
     "section": "Why use Quarto?",
-    "text": "Why use Quarto?\n\nCan be used to write books, blogs, reports, etc.\nCan be used to build websites that showcase your data science projects to employers!\nCan be used to produce academic papers via LaTeX (including templates for specific journals like JASA!)"
+    "text": "Why use Quarto?\n\nCan be used to write books, blogs, reports, etc.\nCan be used to present your DataFest project!\nCan be used to build websites that showcase your data science projects to employers!\nCan be used to produce academic papers via LaTeX (including templates for specific journals like JASA!)"
   },
   {
     "objectID": "presentation.html#goals-of-this-workshop",
     "href": "presentation.html#goals-of-this-workshop",
     "title": "Quarto Workshop",
     "section": "Goals of this workshop",
-    "text": "Goals of this workshop\n\nLearn how to use Quarto with Python and R to create websites\nRecreate this website: https://pebenbow.github.io/datafest-quarto/\nLearn how to deploy a Quarto website using GitHub Pages"
+    "text": "Goals of this workshop\n\nLearn how to use Quarto with Python and R to create websites\nLearn how to deploy a Quarto website using GitHub Pages"
   },
   {
     "objectID": "presentation.html#prerequisites",
@@ -103,5 +103,61 @@
     "title": "Python Example",
     "section": "",
     "text": "Code cells\nFor this, we will use numpy (Harris et al. 2020) and matplotlib (Hunter 2007).\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences\n\nHarris, Charles R., K. Jarrod Millman, Stéfan J. van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, et al. 2020. “Array Programming with NumPy.” Nature 585 (7825): 357–62. https://doi.org/10.1038/s41586-020-2649-2.\n\n\nHunter, J. D. 2007. “Matplotlib: A 2D Graphics Environment.” Computing in Science & Engineering 9 (3): 90–95. https://doi.org/10.1109/MCSE.2007.55."
+  },
+  {
+    "objectID": "presentation.html#workshop-agenda",
+    "href": "presentation.html#workshop-agenda",
+    "title": "Quarto Workshop",
+    "section": "Workshop agenda",
+    "text": "Workshop agenda"
+  },
+  {
+    "objectID": "presentation.html#workshop-time",
+    "href": "presentation.html#workshop-time",
+    "title": "Quarto Workshop",
+    "section": "Workshop time!",
+    "text": "Workshop time!\nGo to https://go.davidson.edu/datafest-quarto"
+  },
+  {
+    "objectID": "presentation.html#forking-this-repo",
+    "href": "presentation.html#forking-this-repo",
+    "title": "Quarto Workshop",
+    "section": "Forking this repo",
+    "text": "Forking this repo\n\nGo to https://github.com/pebenbow/datafest-quarto"
+  },
+  {
+    "objectID": "presentation.html#forking-this-repo-1",
+    "href": "presentation.html#forking-this-repo-1",
+    "title": "Quarto Workshop",
+    "section": "Forking this repo",
+    "text": "Forking this repo\n\nOpen the “Fork” menu in the upper-right corner and create new fork"
+  },
+  {
+    "objectID": "presentation.html#forking-this-repo-2",
+    "href": "presentation.html#forking-this-repo-2",
+    "title": "Quarto Workshop",
+    "section": "Forking this repo",
+    "text": "Forking this repo"
+  },
+  {
+    "objectID": "presentation.html#setting-up-github-pages",
+    "href": "presentation.html#setting-up-github-pages",
+    "title": "Quarto Workshop",
+    "section": "Setting up GitHub Pages",
+    "text": "Setting up GitHub Pages\n\nGo to Settings &gt;&gt; Pages"
+  },
+  {
+    "objectID": "presentation.html#setting-up-github-pages-1",
+    "href": "presentation.html#setting-up-github-pages-1",
+    "title": "Quarto Workshop",
+    "section": "Setting up GitHub Pages",
+    "text": "Setting up GitHub Pages\n\nPick your branch and “docs” subfolder, then Save!"
+  },
+  {
+    "objectID": "presentation.html#setting-up-github-pages-2",
+    "href": "presentation.html#setting-up-github-pages-2",
+    "title": "Quarto Workshop",
+    "section": "Setting up GitHub Pages",
+    "text": "Setting up GitHub Pages\n\nOnce your site is live, you’ll see a link!"
   }
 ]
