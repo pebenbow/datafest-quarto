@@ -124,5 +124,68 @@
     "title": "R Example",
     "section": "Ex 4: Visualize as table",
     "text": "Ex 4: Visualize as table\n\n\nCode\nwb_top10 |&gt;\n    select(\n        rank,\n        country,\n        gdp_percap,\n        region,\n        income,\n        lending\n    ) |&gt; \n    arrange(rank) |&gt; \n    knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\nrank\ncountry\ngdp_percap\nregion\nincome\nlending\n\n\n\n\n1\nMonaco\n224582.45\nEurope & Central Asia\nHigh income\nNot classified\n\n\n2\nBermuda\n110409.81\nNorth America\nHigh income\nNot classified\n\n\n3\nLuxembourg\n106342.76\nEurope & Central Asia\nHigh income\nNot classified\n\n\n4\nIreland\n91647.77\nEurope & Central Asia\nHigh income\nNot classified\n\n\n5\nSwitzerland\n89555.56\nEurope & Central Asia\nHigh income\nNot classified\n\n\n6\nCayman Islands\n81411.65\nLatin America & Caribbean\nHigh income\nNot classified\n\n\n7\nNorway\n78912.33\nEurope & Central Asia\nHigh income\nNot classified\n\n\n8\nChannel Islands\n69822.95\nEurope & Central Asia\nHigh income\nNot classified\n\n\n9\nUnited States\n65875.18\nNorth America\nHigh income\nNot classified\n\n\n10\nSingapore\n65422.46\nEast Asia & Pacific\nHigh income\nNot classified"
+  },
+  {
+    "objectID": "presentation.html#heading",
+    "href": "presentation.html#heading",
+    "title": "Quarto Workshop",
+    "section": "Heading",
+    "text": "Heading\nSome stuff"
+  },
+  {
+    "objectID": "presentation.html#more-headings",
+    "href": "presentation.html#more-headings",
+    "title": "Quarto Workshop",
+    "section": "More headings",
+    "text": "More headings\nMore stuff"
+  },
+  {
+    "objectID": "presentation.html#about-me",
+    "href": "presentation.html#about-me",
+    "title": "Quarto Workshop",
+    "section": "About Me",
+    "text": "About Me\n\nPete Benbow (“BEN-bo”; he/him)\nA.B., Davidson College (2007): Political Science\n12+ years working in data engineering and data science in the private sector + higher education\nCourses taught:\n\nCSC 110: Data Science & Society\nDAT 153: Database Programming\nDAT 211: Data Integration & Analytics"
+  },
+  {
+    "objectID": "presentation.html#what-is-quarto",
+    "href": "presentation.html#what-is-quarto",
+    "title": "Quarto Workshop",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n\nWell, this presentation is Quarto.\nSo is this website.\nSo is this textbook.\nSo is this dashboard."
+  },
+  {
+    "objectID": "presentation.html#what-is-quarto-1",
+    "href": "presentation.html#what-is-quarto-1",
+    "title": "Quarto Workshop",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\nQuarto is a publishing framework, not all that different from R Markdown and Python notebooks, that allows you to blend text content with code cells, data visualizations, and other content, and produce a full-fledged, interactive product.\nIt supports coding in R, Python, SQL, Julia, ObservableJS, and more!"
+  },
+  {
+    "objectID": "presentation.html#why-use-quarto",
+    "href": "presentation.html#why-use-quarto",
+    "title": "Quarto Workshop",
+    "section": "Why use Quarto?",
+    "text": "Why use Quarto?\n\nCan be used to write books, blogs, reports, etc.\nCan be used to build websites that showcase your data science projects to employers!\nCan be used to produce academic papers via LaTeX (including templates for specific journals like JASA!)"
+  },
+  {
+    "objectID": "presentation.html#goals-of-this-workshop",
+    "href": "presentation.html#goals-of-this-workshop",
+    "title": "Quarto Workshop",
+    "section": "Goals of this workshop",
+    "text": "Goals of this workshop\n\nLearn how to use Quarto with Python and R to create websites\nRecreate this website: https://pebenbow.github.io/datafest-quarto/\nLearn how to deploy a Quarto website using GitHub Pages"
+  },
+  {
+    "objectID": "presentation.html#prerequisites",
+    "href": "presentation.html#prerequisites",
+    "title": "Quarto Workshop",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\n\n\n\n\n\nI assume you already have installed R and Python on your machine\n\n\n\n\nInstall Quarto on your machine\nInstall VS Code on your machine\nInstall the Quarto extension for VS Code"
+  },
+  {
+    "objectID": "presentation.html#verifying-quarto",
+    "href": "presentation.html#verifying-quarto",
+    "title": "Quarto Workshop",
+    "section": "Verifying Quarto",
+    "text": "Verifying Quarto\nFrom the terminal in VS Code, run quarto check to run diagnostics and verify Quarto is fully installed and supports R and Python.\n[&gt;] Checking LaTeX....................OK\n      Using: TinyTex\n      Path: C:\\Users\\pebenbow\\AppData\\Roaming\\TinyTeX\\bin\\windows\\\n      Version: 2024\n\n[&gt;] Checking basic markdown render....OK\n\n[&gt;] Checking Python 3 installation....OK\n      Version: 3.13.2\n      Path: C:/Users/pebenbow/AppData/Local/Programs/Python/Python313/python.exe\n      Jupyter: 5.7.2\n      Kernels: python3\n\n[&gt;] Checking Jupyter engine render....OK\n\n[&gt;] Checking R installation...........OK\n      Version: 4.4.1\n      Path: C:/Users/pebenbow/AppData/Local/Programs/R/R-4.4.1\n      LibPaths:\n        - C:/Users/pebenbow/AppData/Local/Programs/R/R-4.4.1/library\n      knitr: 1.49\n      rmarkdown: 2.29"
   }
 ]

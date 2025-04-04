@@ -1,0 +1,75 @@
+---
+title: "Quarto Workshop"
+subtitle: "DataFest! {{< var datafest.term >}}"
+institute: "Davidson College <br> Department of Data Science"
+author: "Pete Benbow"
+footer: "[🔗 Back to Home](https://pebenbow.github.io/datafest-quarto/)"
+logo: "images/davidson-wordmark-horizontal-lockup-black.png"
+lightbox: true
+format:
+  revealjs:
+    theme: style/slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    code-chunk:
+      cache: true
+    html-table-processing: none
+    code-block-bg: true
+    code-block-border-left: "#d42121"
+execute:
+  cache: false
+  freeze: false
+---
+
+## About Me
+
+- Pete Benbow ("BEN-bo"; he/him)
+- A.B., Davidson College (2007): Political Science
+- 12+ years working in data engineering and data science in the private sector + higher education
+- Courses taught:
+    - CSC 110: Data Science & Society
+    - DAT 153: Database Programming
+    - DAT 211: Data Integration & Analytics
+
+## What is Quarto?
+
+- Well, this presentation is Quarto.
+- [So is this website](https://pebenbow.github.io/datafest-quarto/){target="_blank"}.
+- [So is this textbook](https://r4ds.hadley.nz/){target="_blank"}.
+- [So is this dashboard](https://ivelasq.github.io/mortgage-dashboard/){target="_blank"}.
+
+## What is Quarto?
+
+Quarto is a **publishing framework**, not all that different from R Markdown and Python notebooks, that allows you to blend text content with code cells, data visualizations, and other content, and produce a full-fledged, interactive product.
+
+It supports coding in R, Python, SQL, Julia, ObservableJS, and more!
+
+## Why use Quarto?
+
+- Can be used to write books, blogs, reports, etc.
+- **Can be used to build websites that showcase your data science projects to employers!**
+- Can be used to produce academic papers via LaTeX (including templates for specific journals like JASA!)
+
+## Goals of this workshop
+
+- Learn how to use Quarto with Python and R to create websites
+- Recreate this website: <https://pebenbow.github.io/datafest-quarto/>{target="_blank"}
+- Learn how to deploy a Quarto website using GitHub Pages
+
+## Prerequisites
+
+::: {.callout-important appearance="simple"}
+I assume you already have installed R and Python on your machine
+:::
+
+1. [Install Quarto on your machine](https://quarto.org/docs/get-started/){target="_blank"}
+2. [Install VS Code on your machine](https://code.visualstudio.com/download){target="_blank"}
+3. [Install the Quarto extension for VS Code](https://marketplace.visualstudio.com/items?itemName=quarto.quarto){target="_blank"}
+
+## Verifying Quarto
+
+From the terminal in VS Code, run `quarto check` to run diagnostics and verify Quarto is fully installed and supports R and Python.
+
+## VS Code setup
+
